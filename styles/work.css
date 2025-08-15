@@ -1,0 +1,121 @@
+
+.work-section {
+  position: relative;
+}
+.work-section::after {
+  content: "";
+  position: absolute;
+  height: 0.015rem;
+  width: 85%;
+  bottom: 0;
+  left: calc(15% / 2);
+  background-color: var(--dark-color);
+}
+.work-container {
+  padding: 6rem;
+}
+
+.work-header {
+  display: flex;
+  height: 20rem;
+  justify-content: space-between;
+}
+.company-mission {
+  flex: 1;
+  font-size: 2.5rem;
+  text-align: center;
+  letter-spacing: -1.5px;
+  word-spacing: -2px;
+  color: var(--dark-color);
+}
+.company-mission .work-btn {
+  display: block;
+  margin: 2.5rem auto;
+
+  padding: .75rem 3rem;
+  border-radius: 2rem;
+  border: 1px solid var(--dark-color);
+  text-align: center;
+  background-color: transparent;
+  position: relative;
+  overflow: hidden;
+}
+.company-mission .work-btn:after {
+  content: "";
+  position: absolute;
+  height: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: var(--dark-color);
+  transition: 0.4s;
+  z-index: -1;
+}
+.company-mission .work-btn:hover::after {
+  height: 100%;
+}
+.company-mission .work-btn a {
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 0.7rem;
+  font-weight: bolder;
+  color: var(--dark-color);
+}
+.company-mission .work-btn:hover a {
+  color: var(--light-color);
+}
+.work-brand {
+  flex: 1;
+  font-size: 10rem;
+  font-weight: bolder;
+  text-transform: uppercase;
+  text-align: end;
+}
+.clients {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 6rem;
+
+}
+.client {
+  padding: 0rem 0.7rem;
+  width: 25rem;
+}
+.client-link {
+  display: block;
+  height: 40rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: var(--dark-color);
+}
+.media-container {
+  width: 100%;
+  height: 70%;
+  overflow: hidden;
+}
+.client-media {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  transition: 0.3s;
+}
+.client-link:hover .client-media {
+  scale: 1.1;
+  rotate: 3deg;
+}
+.client-name {
+  text-align: center;
+  margin: 1rem 0rem;
+  font-weight: bolder;
+  transition: 0.3s;
+}
+.client-link:hover .client-name {
+  text-decoration: underline;
+  text-decoration-thickness: 0.1rem;
+}
+.client-work {
+  display: block;
+  width: 60%;
+  text-align: center;
+}

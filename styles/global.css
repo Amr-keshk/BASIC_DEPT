@@ -1,0 +1,15 @@
+:root {
+  --light-color: #f4f4f4;
+  --pink-color: #f9cdcd;
+  --dark-color: #252422;
+  --bg-color: #f4f4f4ff;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Space Grotesk", sans-serif;
+}

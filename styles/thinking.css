@@ -1,0 +1,139 @@
+.thinking {
+
+}
+.thinking-container {
+  padding: 6rem;
+}
+.thinkink-header {
+  text-transform: uppercase;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: auto;
+  transition: 0.5s;
+}
+.thinkink-header span {
+  color: var(--dark-color);
+  font-size: 3rem;
+  font-weight: bolder;
+  line-height: 1;
+  margin-left: 2rem;
+}
+.thinkink-header span::first-letter {
+  color: firebrick;
+  margin-left: -1.6rem;
+}
+.thinkink-header a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 0.9rem;
+  padding: .4rem 2rem;
+  border-radius: 5rem;
+  overflow: hidden;
+  border: 0.1rem solid var(--dark-color);
+  color: var(--dark-color);
+  position: relative;
+  z-index: 1;
+  transition: 0.3s;
+}
+.thinkink-header a:hover {
+  color: var(--light-color);
+}
+.thinkink-header a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 0%;
+  width: 100%;
+  background-color: var(--dark-color);
+  transition: 0.3s;
+  z-index: -1;
+}
+.thinkink-header a:hover::after {
+  height: 100%;
+}
+
+.thinking ul {
+  list-style: none;
+  overflow: hidden;
+  
+}
+.thinking ul li {
+  padding: 1rem 0rem 5rem;
+  border-top: 0.1rem solid var(--dark-color);
+}
+.thinking ul li a {
+  display: flex;
+  text-decoration: none;
+  text-transform: uppercase;
+  position: relative;
+  
+}
+.thinking-asset-container {
+  width: 25rem;
+}
+.think-asset {
+  width: 100%;
+}
+.think-body {
+  flex: 0.8;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: var(--dark-color);
+  
+}
+.think-body h5 {
+  letter-spacing: -0.1rem;
+  font-size: 3rem;
+  font-weight: 100;
+  text-align: center;
+  margin-left: 2rem;
+}
+.arrow-container {
+  height: 2rem;
+  width: 2rem;
+  right: 0rem;
+  top: 0;
+  position: absolute;
+}
+.arrow-head {
+  content: "";
+  position: absolute;
+  height: 1rem;
+  width: 1rem;
+  border-top: 0.2rem solid var(--dark-color);
+  border-right: 0.2rem solid var(--dark-color);
+  rotate: 45deg;
+  right: 0.5rem;
+  top: .6rem;
+}
+.arrow-tail {
+  content: "";
+  position: absolute;
+  height: 0.2rem;
+  width: 1.2rem;
+  background: var(--dark-color);
+  right: 0.5rem;
+  top: 1rem;
+}
+.think-body span {
+  margin-left: 2rem;
+  font-weight: 600;
+}
+.animate-arrow {
+  animation: moveArrow .5s linear 0s 1 alternate;
+}
+@keyframes moveArrow {
+  0% {
+    right: 0rem;
+  }
+  50% {
+    right: -2rem;
+  }
+  51% {
+    right: 2rem;
+  }
+}

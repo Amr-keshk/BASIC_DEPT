@@ -1,0 +1,87 @@
+.engagements-section {
+  height: 95vh;
+  position: relative;
+  background-color: var(--bg-color);
+}
+.engagements-section::after, 
+.engagements-section::before {
+  content: "";
+  position: absolute;
+  height: 0.1rem;
+  width: 85%;
+  bottom: 0.1rem;
+  left: calc(15% / 2);
+  background-color: var(--dark-color);
+}
+.engagements-section::before {
+  bottom: calc(100% - 0.1rem);
+}
+.engagement-container {
+  height: 100%;
+  position: relative;
+  padding: 6rem 6rem 1rem;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+.engagement-main-title {
+  font-size: 3rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  position: sticky;
+  top: 0rem;
+  left: 0;
+
+}
+.engagement-main-title::first-letter {
+  color: firebrick;
+  margin-left: 2rem;
+}
+.engagements {
+  display: flex;
+  align-items: start;
+  position: absolute;
+  gap: 6rem;
+  padding: 10rem 0rem 5rem;
+}
+.engagement {
+  width: 17rem;
+  text-align: center;
+}
+.engagement:last-child {
+  margin-right: 6rem;
+}
+.engagement-logo{
+  font-size: 3rem;
+  text-transform: capitalize;
+  margin: 0rem 0rem 4rem 0rem;
+
+}
+.engagement-name {
+  margin: 1rem 0rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.engagement-name + p {
+  font-size: 1.1rem;
+  font-weight: 700;
+  line-height: 1.6;
+}
+.engagement-name + p a {
+  color: var(--dark-color);
+}
+.progress-container {
+  background: gray;
+  width: 50%;
+  position: sticky;
+  height: 0.6rem;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.progress-bar {
+  background-color: firebrick;
+  height: 0.6rem;
+  width: 0%;
+}
